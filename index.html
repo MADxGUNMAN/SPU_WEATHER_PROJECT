@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-B5V87WHJ9K"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-B5V87WHJ9K");
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="refresh" content="120">
+    <title>Simplest Weather</title>
+    <meta
+      name="description"
+      content="Simplest weather, the sleek and modern weather web app, designed with a minimalist glass aesthetic that shows concise and simple information on the current weather conditions and forecast for the next few days."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="img/weather-icon.svg" type="image/x-icon" />
+  </head>
+
+  <body>
+    <main>
+        <h1 style="font-family: 'Arial', sans-serif; 
+                   color: #ffffff;  
+                   text-transform: uppercase;">
+            SPU Weather Project
+        </h1>
+    </main>
+</body>
+
+  <body class="morning-clrs">
+    <main class="app-container">
+      <header>
+        <p id="location">Location</p>
+        <label for="metric" class="toggle-metric">
+          C
+          <input type="checkbox" name="metric" id="metric" />
+          <div class="selected-metric"></div>
+          F
+        </label>
+      </header>
+
+      <section class="weather-section">
+        <img src="img/weather-icons/01d.svg" alt="" />
+        <div class="temp-wrapper">
+          <div class="temp">
+            <h1>00</h1>
+            <span class="degree">°C</span>
+          </div>
+          <div class="weather-description">
+            <p>Description</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="date-section">
+        <p class="date">00th Jan 00</p>
+        <p class="day-and-hour">Sunday | 0:00 am</p>
+      </section>
+
+      <section class="weather-details">
+        <div class="detail-wind detail">
+          <img src="img/wind-direction-icon.svg" alt="" />
+          <p>Wind speed: <span class="wind">00Km/h</span></p>
+        </div>
+        <span>|</span>
+        <div class="detail-humity detail">
+          <img src="img/hum-icon.svg" alt="" />
+          <p>Humidity: <span class="hum">00%</span></p>
+        </div>
+        <span>|</span>
+        <div class="detail-rain detail">
+          <img src="img/rain-icon.svg" alt="" />
+          <p>Cloudness: <span class="clouds">0.0%</span></p>
+        </div>
+      </section>
+
+      <section class="forecast-section">
+        <img class="arrow-left" src="img/arrow-right.svg" alt="" />
+        <section class="forecast">
+          <!-- <div class="forecast-day-card">
+            <p>00</p>
+            <img src="img/weather-icons/01d.svg" alt="" />
+            <p class="week-day">Sun</p>
+          </div> -->
+        </section>
+        <img class="arrow-right" src="img/arrow-right.svg" alt="" />
+      </section>
+    </main>
+
+    <footer>
+      <nav>
+        Created by:
+        <a href="https://github.com/MADxGUNMAN" target="_blank"
+          >ANSARI SOUAIB</a
+        >
+        |
+
+        <a href="credits.html" target="_blank">Credits Page</a> |
+
+        <a
+          href="https://github.com/MADxGUNMAN"
+          target="_blank"
+          >Source code</a
+        >
+      </nav>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
